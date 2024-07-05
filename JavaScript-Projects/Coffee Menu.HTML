@@ -1,0 +1,273 @@
+ <!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <style>
+        /* Basic styling for the navigation */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex; /* Use flex to create a full-height layout */
+            flex-direction: column; /* Vertical layout */
+            background-color: #FFF5EE; /* Solid beige background color */
+            color: #333; /* Dark text color */
+        }
+        header {
+            background-color: #6B8E23; /* Solid olive green */
+            color: #FFF; /* White text color */
+            text-align: center;
+            padding: 10px 0;
+            width: 100%; /* Full width for the top bar */
+            flex-shrink: 0; /* Top bar does not shrink */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            margin-left: 55%;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #FFF; /* White text color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFD700; /* Solid gold */
+        }
+        
+        /* Styling for the main content */
+        .main-content {
+            flex: 1; /* Take remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center items */
+            text-align: center;
+            padding: 20px;
+            position: relative; /* To contain the background image */
+            flex-direction: column; /* Arrange content vertically */
+        }
+        .caption {
+            font-size: 3rem;
+            color: #556B2F; /* Solid dark olive green */
+            margin-bottom: 20px;
+            margin-left: 25%;
+            margin-top: 5%;
+        }
+        .menu-items {
+            margin-top: 20px;
+        }
+        .menu-items h3 {
+            color: #8A2BE2; /* Solid blue violet */
+            font-size: 2rem;
+            margin-bottom: 10px;
+            margin-left: 25%;
+            
+        }
+        .menu-items ul {
+            list-style-type: disc;
+            padding-left: 20px; /* Indent bullets */
+            text-align: left; /* Align text to the left */
+            
+        }
+        .menu-items ul li {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: lavenderblush;
+            margin-left: 70%;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Adjust width as needed */
+            height: 100%; /* Full height of the viewport */
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/023/010/450/small_2x/the-cup-of-latte-coffee-with-heart-shaped-latte-art-and-ai-generated-free-photo.jpg"); /* Direct image URL */
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Behind other content */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="caption">But first, coffee.</div>
+        <div class="menu-items">
+            <h3>Our Menu</h3>
+            <ul>
+                <li>Espresso</li>
+                <li>Latte</li>
+                <li>Cappuccino</li>
+                <li>Americano</li>
+                <li>Mocha</li>
+                <li>Macchiato</li>
+                <li>Cold Brew</li>
+            </ul>
+        </div>
+        <div class="background-image"></div>
+    </div>
+</body>
+</html>--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <style>
+        /* Basic styling for the navigation */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex; /* Use flex to create a full-height layout */
+            flex-direction: column; /* Vertical layout */
+            background-color: #FFF5EE; /* Solid beige background color */
+            color: #333; /* Dark text color */
+        }
+        header {
+            background-color:beige; /* Solid olive green */
+            color: green; /* White text color */
+            text-align: center;
+            padding: 10px 0;
+            width: 100%; /* Full width for the top bar */
+            flex-shrink: 0; /* Top bar does not shrink */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: purple; /* White text color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFD700; /* Solid gold */
+        }
+        
+        /* Styling for the main content */
+        .main-content {
+            flex: 1; /* Take remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            text-align: right;
+            padding: 20px;
+            position: relative; /* To contain the background image */
+        }
+        .content-right {
+            flex: 1; /* Take up remaining space */
+            padding: 50px;
+        }
+        .content-right h2 {
+            color: lightcoral; /* Solid dark red */
+            font-size: 2rem;
+            font-weight: bold; /* Bold font */
+            margin-bottom: 10px;
+            margin-right: 20%;
+        }
+        .content-right h1 {
+            color: greenyellow; /* Solid dark olive green */
+            font-size: 2.2rem;
+            margin-right: 15%;
+        }
+        .menu-items {
+            margin-top: 20px;
+        }
+        .menu-items h3 {
+            color: blue; /* Solid blue violet */
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            margin-right: 25%;
+        }
+        .menu-items ul {
+            list-style-type: disc;
+            padding: 0 0 0 20px; /* Add left padding for bullets */
+            margin-left: 65%;
+            text-align: left; /* Align text to the left */
+        }
+        .menu-items ul li {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: bisque;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Adjust width as needed */
+            height: 100%; /* Full height of the viewport */
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/023/010/450/small_2x/the-cup-of-latte-coffee-with-heart-shaped-latte-art-and-ai-generated-free-photo.jpg"); /* Direct image URL */
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Behind other content */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="content-right">
+            <h1>But first, coffee.</h1>
+            <h2>About Coffee</h2>
+            <!--<p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. It is one of the most popular drinks in the world, and it can be prepared and presented in a variety of ways. Coffee is a major export commodity: it was the top agricultural export for numerous countries in 2018 and was the seventh-largest legal agricultural export by value globally in 2020.</p>-->
+            <div class="menu-items">
+                <h3>Our Menu</h3>
+                <ul>
+                    <li>Espresso</li>
+                    <li>Latte</li>
+                    <li>Cappuccino</li>
+                    <li>Americano</li>
+                    <li>Mocha</li>
+                    <li>Macchiato</li>
+                    <li>Cold Brew</li>
+                </ul>
+            </div>
+        </div>
+        <div class="background-image"></div>
+    </div>
+</body>
+</html>
