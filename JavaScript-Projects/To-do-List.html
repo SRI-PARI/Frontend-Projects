@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-List</title>
+</head>
+<body>
+    <!-- Main container for the to-do list -->
+    <div class="container">
+        <!-- Header for the to-do list -->
+        <h1 class="row">To-Do-List</h1>
+        <br><br>
+        <!-- Form to add new items to the to-do list -->
+        <div class="row">
+            <form>
+                <!-- Input field for the new to-do item -->
+                <div class="input-group">
+                    <input type="text" placeholder="todo-item" id="box" style="width: 30vw">
+                </div>
+                <br>
+                <!-- Button to add the new item to the list -->
+                <div class="form-group">
+                    <input type="button" value="Add" style="width:10vw" onclick="add_item()">
+                </div>
+            </form>
+        </div>      
+        <!-- Unordered list to display the to-do items -->
+        <div class="row">
+            <ul id="list_item">
+            </ul>
+        </div>
+    </div>
+    
+    <!-- JavaScript to handle adding and removing items from the list -->
+    <script type="text/javascript">
+        function add_item() {
+            // Get the value from the input field
+            let item = document.getElementById("box");
+            // Get the unordered list element
+            let list_item = document.getElementById("list_item");
+            
+            // Check if the input field is not empty
+            if (item.value != "") {
+                // Create a new list item element
+                let make_li = document.createElement("li");
+                // Add the text from the input field to the new list item
+                make_li.appendChild(document.createTextNode(item.value));
+                // Append the new list item to the unordered list
+                list_item.appendChild(make_li);
+                // Clear the input field
+                item.value = "";
+                // Add an onclick event to the list item to remove it when clicked
+                make_li.onclick = function() {
+                    this.parentNode.removeChild(this);
+                }
+            } else {
+                // Alert the user if the input field is empty
+                alert("Please add a value to the item");
+            }
+        }
+    </script>
+</body>
+</html>
